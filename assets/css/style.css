@@ -7,12 +7,16 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
-/* header */
+/* body */
+
 body {
     background-color: #F9F8FF;
 }
+
+/* header*/
 
 header {
     font-family: Orbitron, sans-serif;
@@ -21,4 +25,21 @@ header {
     text-align: center;
     margin-top: 25px;
     colour: navy;
+}
+
+/* game board */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: auto;
+    padding-top: 25px;
+}
+
+/* cards */
+
+img {
+    width: 25%;
+    padding: 2px;
 }
