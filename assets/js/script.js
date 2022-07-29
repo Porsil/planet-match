@@ -104,17 +104,19 @@ function checkCards() {
 /**
  *  flips the cards over
  */
- function flipCard() {
 
-    let cardsFlipped = []
-    let cardsFlippedId = []
+
+function flipCard() {
+
+    const cardsFlipped = [];
+    const cardsFlippedId = [];
     let cardId = this.getAttribute('data-id');
 
     cardsFlipped.push(cardArray[cardId].name);
     cardsFlippedId.push(cardId);
     this.setAttribute('src', cardArray[cardId].img);
 
-    if (cardsFlipped.length === 1) {
+    if (cardsFlipped.length === 2) {
         setTimeout(checkCards, 500);
         alert("timer check");
         console.log("timer check");
