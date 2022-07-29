@@ -69,4 +69,19 @@ const cardArray = [
     },
 ];
 
-console.log(cardArray);
+/**
+ *  adds the cards to the grid to create the game board
+ */
+function createGame() {
+    
+    let grid = document.getElementsByClassName('grid')[0];
+
+    for (let i = 0; i < cardArray.length; i++) {
+        let card = document.createElement('img');
+        card.setAttribute('src', 'assets/images/back.webp');
+        card.setAttribute('data-id', i);
+        grid.appendChild(card);
+    }  
+}
+
+createGame();
