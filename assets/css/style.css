@@ -11,8 +11,7 @@
 
 /* header */
 body {
-    background-image: url('../images/milky_way.webp');
-    background-repeat: no-repeat;
+    background-color: #F9F8FF;
 }
 
 header {
@@ -21,6 +20,5 @@ header {
     text-transform: uppercase;
     text-align: center;
     margin-top: 25px;
-    background-color: ;
-    color: #F9F8FF;
+    colour: navy;
 }
