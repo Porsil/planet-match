@@ -95,9 +95,16 @@ for (let i = cardArray.length -1; i > 0; i--) {
 }
 
 /**
+ *  checks for matches
+ */
+function checkCards() {
+    console.log("checkCards check");
+}
+
+/**
  *  flips the cards over
  */
-function flipCard() {
+ function flipCard() {
 
     let cardsFlipped = []
     let cardsFlippedId = []
@@ -107,7 +114,12 @@ function flipCard() {
     cardsFlippedId.push(cardId);
     this.setAttribute('src', cardArray[cardId].img);
 
-}
+    if (cardsFlipped.length === 1) {
+        setTimeout(checkCards, 500);
+        alert("timer check");
+        console.log("timer check");
+    }
 
+}
 
 createGame();
