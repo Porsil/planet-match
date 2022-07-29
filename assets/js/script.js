@@ -80,8 +80,25 @@ function createGame() {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/back.webp');
         card.setAttribute('data-id', i);
+        card.addEventListener('click', flipCard);
         grid.appendChild(card);
     }  
 }
+
+/**
+ *  flips the cards over
+ */
+function flipCard() {
+
+    let cardsFlipped = []
+    let cardsFlippedId = []
+    let cardId = this.getAttribute('data-id');
+
+    cardsFlipped.push(cardArray[cardId].name);
+    cardsFlippedId.push(cardId);
+    this.setAttribute('src', cardArray[cardId].img);
+
+}
+
 
 createGame();
