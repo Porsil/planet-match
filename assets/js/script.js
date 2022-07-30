@@ -1,5 +1,7 @@
-
-
+// waits for the DOM to finish loading before running the game
+document.addEventListener("DOMContentLoaded", function() {
+    createGame();
+})
 
 // add cards (need 2 of each card)
 const cardArray = [
@@ -128,8 +130,6 @@ function flipCard() {
     this.setAttribute('src', cardArray[cardId].img);
 
     if (cardsFlipped.length === 2) {
-        setTimeout(checkCards, 750);
+        setTimeout(checkCards, 500);
     }
 }
-
-createGame();
