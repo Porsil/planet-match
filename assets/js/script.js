@@ -99,12 +99,13 @@ for (let i = cardArray.length -1; i > 0; i--) {
  */
 function checkCards() {
     
-    const cards = document.querySelectorAll('img');
+    let cards = document.querySelectorAll('img');
 
-    if (cardsFlipped[0] == cardsFlipped[1]) {
-        console.log("one")
+    if (cardsFlipped[0] !== cardsFlipped[1]) {
+        cards[cardsFlippedId[0]].setAttribute('src', 'assets/images/back.webp');
+        cards[cardsFlippedId[1]].setAttribute('src', 'assets/images/back.webp');
     } else {
-        console.log("two")
+        console.log("match")
     }
     cardsFlipped = [];
     cardsFlippedId = [];
