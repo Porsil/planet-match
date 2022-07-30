@@ -8,6 +8,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    font-family: Orbitron, sans-serif;
 }
 
 /* body */
@@ -16,10 +17,9 @@ body {
     background-color: #F9F8FF;
 }
 
-/* header*/
+/* header */
 
 header {
-    font-family: Orbitron, sans-serif;
     font-size: 200%;
     text-transform: uppercase;
     text-align: center;
@@ -32,7 +32,7 @@ header {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
+    width: 650px;
     margin: auto;
     padding-top: 25px;
 }
@@ -42,4 +42,15 @@ header {
 img {
     width: 25%;
     padding: 2px;
+    border-radius: 10px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer > h2 {
+    text-transform: uppercase;
 }
