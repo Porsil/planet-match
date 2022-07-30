@@ -100,12 +100,15 @@ for (let i = cardArray.length -1; i > 0; i--) {
 function checkCards() {
     
     let cards = document.querySelectorAll('img');
+    let cardOne = cardsFlippedId[0];
+    let cardTwo = cardsFlippedId[1];
 
     if (cardsFlipped[0] !== cardsFlipped[1]) {
-        cards[cardsFlippedId[0]].setAttribute('src', 'assets/images/back.webp');
-        cards[cardsFlippedId[1]].setAttribute('src', 'assets/images/back.webp');
+        cards[cardOne].setAttribute('src', 'assets/images/back.webp');
+        cards[cardTwo].setAttribute('src', 'assets/images/back.webp');
     } else {
-        console.log("match")
+        cards[cardOne].removeEventListener('click', flipCard);
+        cards[cardTwo].removeEventListener('click', flipCard);
     }
     cardsFlipped = [];
     cardsFlippedId = [];
