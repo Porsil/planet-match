@@ -20,7 +20,7 @@ body {
 /* header */
 
 header {
-    font-size: 200%;
+    font-size: 175%;
     text-transform: uppercase;
     text-align: center;
     margin-top: 15px;
@@ -45,6 +45,15 @@ img {
     border-radius: 10px;
 }
 
+/* congratulations message */
+
+#result {
+    color: navy;
+    padding-top: 10px;
+    font-size: 125%;
+    text-align: center;
+}
+
 /* reset button */
 
 #reset {
@@ -66,6 +75,7 @@ img {
 }
 
 /* footer */
+
 footer {
     text-align: center;
     margin-top: 20px;
