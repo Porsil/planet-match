@@ -23,7 +23,7 @@ header {
     font-size: 200%;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px;
     color: navy;
 }
 
@@ -34,7 +34,7 @@ header {
     flex-wrap: wrap;
     width: 650px;
     margin: auto;
-    padding-top: 25px;
+    padding-top: 10px;
 }
 
 /* cards */
@@ -45,10 +45,31 @@ img {
     border-radius: 10px;
 }
 
+/* reset button */
+
+.reset {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 100%;
+    color: #F9F8FF;
+    background-color: navy;
+    padding: 10px 15px;
+    border: 2px #F9F8FF solid;
+    border-radius: 10px;
+}
+
+.reset:hover {
+    color: navy;
+    background-color: #F9F8FF;
+    border: 2px navy solid;
+}
+
 /* footer */
 footer {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    color: navy;
 }
 
 footer > h2 {
