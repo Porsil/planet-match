@@ -98,18 +98,25 @@ for (let i = cardArray.length -1; i > 0; i--) {
  *  checks for matches
  */
 function checkCards() {
-    console.log("checkCards check");
+    
+    const cards = document.querySelectorAll('img');
+
+    if (cardsFlipped[0] == cardsFlipped[1]) {
+        console.log("one")
+    } else {
+        console.log("two")
+    }
+    cardsFlipped = [];
+    cardsFlippedId = [];
 }
 
+let cardsFlipped = [];
+let cardsFlippedId = [];
 /**
  *  flips the cards over
  */
-
-
 function flipCard() {
 
-    const cardsFlipped = [];
-    const cardsFlippedId = [];
     let cardId = this.getAttribute('data-id');
 
     cardsFlipped.push(cardArray[cardId].name);
@@ -117,11 +124,8 @@ function flipCard() {
     this.setAttribute('src', cardArray[cardId].img);
 
     if (cardsFlipped.length === 2) {
-        setTimeout(checkCards, 500);
-        alert("timer check");
-        console.log("timer check");
+        setTimeout(checkCards, 750);
     }
-
 }
 
 createGame();
