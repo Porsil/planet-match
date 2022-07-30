@@ -96,6 +96,10 @@ for (let i = cardArray.length -1; i > 0; i--) {
     cardArray[j] = k
 }
 
+// variables for checkCards function
+let resultDisplay = document.getElementById("result");
+let buttonChange = document.getElementById("reset");
+let cardsWon = [];
 /**
  *  checks for matches
  */
@@ -111,11 +115,18 @@ function checkCards() {
     } else {
         cards[cardOne].removeEventListener('click', flipCard);
         cards[cardTwo].removeEventListener('click', flipCard);
+        cardsWon.push(cardsFlipped);
     }
     cardsFlipped = [];
     cardsFlippedId = [];
+    
+    if (cardsWon.length === cardArray.length / 2) {
+        resultDisplay.textContent = 'Congratulations! You matches all the planets!'
+        buttonChange.textContent = 'Play Again';
+    }
 }
 
+//variables for flipCard function
 let cardsFlipped = [];
 let cardsFlippedId = [];
 /**

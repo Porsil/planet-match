@@ -47,7 +47,7 @@ img {
 
 /* reset button */
 
-.reset {
+#reset {
     display: flex;
     margin: auto;
     margin-top: 10px;
@@ -59,7 +59,7 @@ img {
     border-radius: 10px;
 }
 
-.reset:hover {
+#reset:hover {
     color: navy;
     background-color: #F9F8FF;
     border: 2px navy solid;
