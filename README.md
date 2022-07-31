@@ -16,7 +16,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
 
 -   ### **Wireframes**
 
-    -   Wireframe - [View]()
+    -   Wireframe - [View](assets/read-me-docs/planet-match.pdf)
 
 -   ### **Design**
 
@@ -33,7 +33,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
     -   The game name is displayed at the top of the page and the name is simple to allow clear understanding of the game.
     -   This addresses visitor goal 1.
 
-![game name]()
+![game name](assets/read-me-docs/title.png)
 
 -   **Game Area**
 
@@ -44,8 +44,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
     -   Once all the planets are matches, the game has been won and a congratulations message appears under the game area.
     -   This addresses visitor goal 3.
 
-![game area start]()
-![game area end]()
+![game area](assets/read-me-docs/game-board.png)
 
 -   **Reset Board & Play Again Button**
 
@@ -54,22 +53,22 @@ This is the website for Planet Match. A website for playing a matching planet ca
     -   After the game is completed the button display is changed to 'Play Again'.
     -   This addresses visitor goals 4 & 5.
 
-![reset board button]()
-![play again button]()
+![reset board button](assets/read-me-docs/reset-button.png)
+![play again button](assets/read-me-docs/play-again-button.png)
 
 -   **Game Rules**
 
     -   The game rules are permanently displayed at the bottom of the site to be easily found at all times during game play.
     -   This addresses visitor goal 2.
 
-![game rules]()
+![game rules](assets/read-me-docs/game-rules.png)
 
 -   **404 Page**
 
     -   A 404 error page was created to notify the user if they attempted to navigate to a page or file that does not exist.
     -   This page offers a button to return to the home page and keeps the styling from the game play page.
 
-![404 page]()
+![404 page](assets/read-me-docs/404-page.png)
 
 -   **Further Features to Implement**
 
