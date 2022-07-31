@@ -92,3 +92,19 @@ The website is responsive on all device sizes and to maximise the websites visua
     -   [Google Fonts](https://fonts.google.com/) were used to import the 'Orbitron' font into the style.css file. This font is used throughout all pages of the website.
     -   [Gitpod](https://gitpod.io/) was used for version control by utilizing the Gitpod terminal to commit to Git and push to [Github](https://github.com/) which then stored the project code.
     -   [Balsamiq](https://balsamiq.com/) was used to create the wireframe for the website.
+    -   Microsoft Paint was used to create the planet images.
+    -   [Ezgif](https://ezgif.com) was used to re-size the planet images and convert all images to webp format.
+
+-   ## **Testing**
+
+The site was frequently tested during development on Firefox, Google Chrome and Microsoft Edge browsers. The development tools were used frequently to log text to the console to test the javascript fuctions during game development and to view the site layout on different devices as well as using the 'responsive' setting to see at what sizes the layout became distorted.
+
+*****************************************************************************
+Once deployed the website was tested on Firefox, Google Chrome and Microsoft Edge browsers on a desktop and on a Kindle Fire and iPhone12, in both portrait and landscape.
+
+Testing of the website was also performed by family on a Samsung Galaxy Tab A and a Samsung Galaxy J5 to aid in the discovery of bugs and user experience issues.
+*****************************************************************************
+
+The game was also tested by my planet mad 5 year old son, Alex, whom the game was created for.
+
+-   **Bugs**
