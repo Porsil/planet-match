@@ -107,3 +107,49 @@ Testing of the website was also performed by family on a Samsung Galaxy Tab A an
 The game was also tested by my planet mad 5 year old son, Alex, whom the game was created for.
 
 -   **Bugs**
+
+    -   The flipCard and checkCards function would intially not work. Moving some of the variables to outside of the fucntion fixed this.
+    -   If more than 2 cards are clicked in the 0.5 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug has not been fixed.
+
+-   **Validator Testing**
+
+    - HTML
+        -   When passed through the [official W3C HTML validator](https://validator.w3.org/) no errors were found.
+    
+    - CSS
+        -   The [official W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) gave an error as the 2 parameters given for padding had a comma sepataing them. The comma was removed to resolve the error.
+    
+    - JS
+        -   The code was passed through [JSHint](https://jshint.com/), which was configured to ES6, some missing semi-colons were flagged. The semi-colons were added to resolve the warnings.
+
+-   **Accessibility Testing**
+      
+    -   WebAIM Contract Checker
+        -   The navy and very pale blue colours were checked through [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/), both light on dark and dark on light combinations passed all WCAG tests.
+
+    -   Lighthouse
+        -   Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
+        -   The first report gave a accessability score of 82, due to no alt labels being added to the images. Javascript code was added to include alt labels on all images, which improved the score to 100.
+        -   The final report after deployment gave scores of **************************************************************************
+
+        ![Lighthouse Report]()
+
+-   ## **Deployment**
+
+-   **GitHub Pages**
+
+The project was deployed to GitHub pages using the following steps:
+
+   1.   Log in to GitHub and locate the GitHub repository.
+   2.   Select the "Settings" button at the top of the repository.
+   3.   Select the "Pages" tab on the left-hand menu to open the "GitHub Pages" section.
+   4.   In the "Source" section, click the dropdown labelled "None" and select "Main".
+   5.   The page will automatically refresh, and the published site link is given at the top of the "GitHub Pages" section.
+
+-   ## **Credits**
+
+-   **Code**
+
+    -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/).
+    -   The Javascript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
+    -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
