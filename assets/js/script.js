@@ -82,6 +82,7 @@ function createGame() {
         let card = document.createElement('img');
         card.setAttribute('src', 'assets/images/back.webp');
         card.setAttribute('data-id', i);
+        card.setAttribute('alt', 'back');
         card.addEventListener('click', flipCard);
         grid.appendChild(card);
     }  
@@ -111,7 +112,9 @@ function checkCards() {
 
     if (cardsFlipped[0] !== cardsFlipped[1]) {
         cards[cardOne].setAttribute('src', 'assets/images/back.webp');
+        cards[cardOne].setAttribute('alt', 'back');
         cards[cardTwo].setAttribute('src', 'assets/images/back.webp');
+        cards[cardTwo].setAttribute('alt', 'back');
     } else {
         cards[cardOne].removeEventListener('click', flipCard);
         cards[cardTwo].removeEventListener('click', flipCard);
@@ -139,6 +142,7 @@ function flipCard() {
     cardsFlipped.push(cardArray[cardId].name);
     cardsFlippedId.push(cardId);
     this.setAttribute('src', cardArray[cardId].img);
+    this.setAttribute('alt', cardArray[cardId].name);
 
     if (cardsFlipped.length === 2) {
         setTimeout(checkCards, 500);
