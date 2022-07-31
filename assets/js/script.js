@@ -102,7 +102,7 @@ let resultDisplay = document.getElementById("result");
 let buttonChange = document.getElementById("reset");
 let cardsWon = [];
 /**
- *  checks for matches
+ *  checks for matches and game end
  */
 function checkCards() {
     

@@ -96,7 +96,7 @@ footer > h2 {
     line-height: 60px;
     background-image: url('../images/back.webp');
     background-repeat: no-repeat;
-    width: 45%;
+    width: 475px;
     margin: 100px auto;
     padding-top: 135px;
     padding-bottom: 50px;
@@ -116,7 +116,7 @@ footer > h2 {
 .error-message>a:hover {
     color: #F9F8FF;
     background-color: navy;
-    border: 2px navy solid;
+    border: 2px #F9F8FF solid;
 }
 
 /* media queries */
@@ -140,7 +140,7 @@ footer > h2 {
     
     #reset {
         font-size: 90%;
-        padding: 5px, 10px;
+        padding: 5px 10px;
     }
 
     footer {
@@ -167,5 +167,12 @@ footer > h2 {
     
     #reset {
         font-size: 75%;
+    }
+
+    .error-message {
+        width: 250px;
+        font-size: 125%;
+        padding-top: 50px;
+        padding-bottom: 10px;
     }
 }
