@@ -86,6 +86,39 @@ footer > h2 {
     text-transform: uppercase;
 }
 
+/* 404 page */
+
+.error-message {
+    text-align: center;
+    font-size: 200%;
+    text-transform: uppercase;
+    color: #F9F8FF;
+    line-height: 60px;
+    background-image: url('../images/back.webp');
+    background-repeat: no-repeat;
+    width: 45%;
+    margin: 100px auto;
+    padding-top: 135px;
+    padding-bottom: 50px;
+}
+
+.error-message>a {
+    font-size: 80%;
+    background-color: #F9F8FF;
+    color: navy;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px navy solid;
+    border-radius: 10px;
+    line-height: 150px;
+}
+
+.error-message>a:hover {
+    color: #F9F8FF;
+    background-color: navy;
+    border: 2px navy solid;
+}
+
 /* media queries */
 
 /* screen size 700px wide and below */
