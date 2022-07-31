@@ -1,7 +1,7 @@
 // waits for the DOM to finish loading before running the game
 document.addEventListener("DOMContentLoaded", function() {
     createGame();
-})
+});
 
 // add cards (need 2 of each card)
 const cardArray = [
@@ -91,10 +91,10 @@ function createGame() {
 // shuffles the cards using the Fisher Yates method
 // taken from https://www.w3schools.com/js/js_array_sort.asp
 for (let i = cardArray.length -1; i > 0; i--) {
-    let j = Math.floor(Math.random() * i)
-    let k = cardArray[i]
-    cardArray[i] = cardArray[j]
-    cardArray[j] = k
+    let j = Math.floor(Math.random() * i);
+    let k = cardArray[i];
+    cardArray[i] = cardArray[j];
+    cardArray[j] = k;
 }
 
 // variables for checkCards function
@@ -124,7 +124,7 @@ function checkCards() {
     cardsFlippedId = [];
     
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = 'Congratulations! You matches all the planets!'
+        resultDisplay.textContent = 'Congratulations! You matches all the planets!';
         buttonChange.textContent = 'Play Again';
     }
 }
