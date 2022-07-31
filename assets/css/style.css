@@ -85,3 +85,54 @@ footer {
 footer > h2 {
     text-transform: uppercase;
 }
+
+/* media queries */
+
+/* screen size 700px wide and below */
+@media screen and (max-width: 700px) {
+    header {
+        font-size: 125%;
+        width: 80%;
+        margin: auto;
+        padding-top: 15px;
+    }
+    
+    .grid {
+        width: 90%;
+    }
+
+    #result {
+        font-size: 100%;
+    }
+    
+    #reset {
+        font-size: 90%;
+        padding: 5px, 10px;
+    }
+
+    footer {
+        font-size: 80%;
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+
+/* screen size 500px wide and below */
+@media screen and (max-width: 500px) {
+    header {
+        font-size: 100%;
+    }
+    
+    .grid {
+        width: 95%;
+    }
+
+    #result {
+        font-size: 85%;
+    }
+    
+    #reset {
+        font-size: 75%;
+    }
+}
