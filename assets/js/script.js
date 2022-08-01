@@ -110,15 +110,15 @@ function checkCards() {
     let cardOne = cardsFlippedId[0];
     let cardTwo = cardsFlippedId[1];
 
-    if (cardsFlipped[0] !== cardsFlipped[1]) {
+    if (cardsFlipped[0] === cardsFlipped[1]) {
+        cards[cardOne].removeEventListener('click', flipCard);
+        cards[cardTwo].removeEventListener('click', flipCard);
+        cardsWon.push(cardsFlipped);
+    } else {
         cards[cardOne].setAttribute('src', 'assets/images/back.webp');
         cards[cardOne].setAttribute('alt', 'back');
         cards[cardTwo].setAttribute('src', 'assets/images/back.webp');
         cards[cardTwo].setAttribute('alt', 'back');
-    } else {
-        cards[cardOne].removeEventListener('click', flipCard);
-        cards[cardTwo].removeEventListener('click', flipCard);
-        cardsWon.push(cardsFlipped);
     }
     cardsFlipped = [];
     cardsFlippedId = [];

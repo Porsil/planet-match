@@ -1,10 +1,10 @@
 # <h1 align="center">**PLANET MATCH**</h1>
 
-[View the live project here]()
+[View the live project here](https://porsil.github.io/planet-match/index.html)
 
 This is the website for Planet Match. A website for playing a matching planet card game. The website is responsive allowing the game to be played on a range of devices.
 
-![Website images]()
+![Website images](assets/read-me-docs/responsive.png)
 
 -   ### **Visitor Goals**
 
@@ -130,9 +130,9 @@ The game was also tested by my planet mad 5 year old son, Alex, whom the game wa
     -   Lighthouse
         -   Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
         -   The first report gave a accessability score of 82, due to no alt labels being added to the images. Javascript code was added to include alt labels on all images, which improved the score to 100.
-        -   The final report after deployment gave scores of **************************************************************************
+        -   The final report after deployment gave the following scores:
 
-        ![Lighthouse Report]()
+        ![Lighthouse Report](assets/read-me-docs/lighthouse.png)
 
 -   ## **Deployment**
 
@@ -153,3 +153,18 @@ The project was deployed to GitHub pages using the following steps:
     -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/).
     -   The Javascript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
     -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
+    -   The code for shuffling the cards using the Fisher Yates method was taken from this [w3schools page](https://www.w3schools.com/js/js_array_sort.asp).
+
+-   **Media**
+
+    -   The pictures used were taken from [Pixabay](https://pixabay.com/):
+        - [Mercury](https://pixabay.com/photos/mercury-planet-surface-solar-system-11591/)
+        - [venus](https://pixabay.com/photos/venus-earth-size-comparison-planets-11588/)
+        - [Earth](https://pixabay.com/photos/venus-earth-size-comparison-planets-11588/)
+        - [Mars](https://pixabay.com/photos/mars-red-planet-planet-space-11012/)
+        - [Jupiter](https://pixabay.com/photos/jupiter-planet-solar-system-5263284/)
+        - [Saturn](https://pixabay.com/photos/saturn-planet-solar-system-6063393/)
+        - [Uranus](https://pixabay.com/photos/uranus-planet-gas-planet-space-11625/)
+        - [Neptune](https://pixabay.com/photos/neptune-planet-solar-system-67537/)
+        - [Nebula for card back](https://pixabay.com/photos/ngc-2264-dark-cloud-cone-nebula-11176/)
+        - [Rocket for favicon](https://pixabay.com/vectors/rocket-icon-symbol-gui-internet-1976107/)
