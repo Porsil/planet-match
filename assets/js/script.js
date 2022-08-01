@@ -124,7 +124,7 @@ function checkCards() {
     cardsFlippedId = [];
     
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = 'Congratulations! You matches all the planets!';
+        resultDisplay.textContent = 'Congratulations! You matched all the planets!';
         buttonChange.textContent = 'Play Again';
     }
 }
