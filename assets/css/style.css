@@ -139,6 +139,10 @@ footer > h2 {
         padding-top: 15px;
     }
     
+    .stats {
+        font-size: 100%;
+    }
+    
     .grid {
         width: 90%;
     }
@@ -164,6 +168,10 @@ footer > h2 {
 @media screen and (max-width: 500px) {
     header {
         font-size: 100%;
+    }
+    
+    .stats {
+        font-size: 85%;
     }
     
     .grid {
