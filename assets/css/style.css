@@ -27,6 +27,15 @@ header {
     color: navy;
 }
 
+/* stats */
+
+.stats {
+    color: navy;
+    padding-top: 5px;
+    font-size: 125%;
+    text-align: center;
+}
+
 /* game board */
 
 .grid {
@@ -59,7 +68,7 @@ img {
 #reset {
     display: flex;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 100%;
     color: #F9F8FF;
     background-color: navy;
@@ -78,7 +87,7 @@ img {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     color: navy;
 }
 

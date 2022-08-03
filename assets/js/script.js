@@ -98,6 +98,8 @@ for (let i = cardArray.length -1; i > 0; i--) {
 }
 
 // variables for checkCards function
+let scoreDisplay = document.getElementById("score");
+let matchedDisplay = document.getElementById("matched");
 let resultDisplay = document.getElementById("result");
 let buttonChange = document.getElementById("reset");
 let cardsWon = [];
@@ -123,6 +125,9 @@ function checkCards() {
     cardsFlipped = [];
     cardsFlippedId = [];
     
+    scoreDisplay.textContent = cardScore.length / 2;
+    matchedDisplay.textContent = cardsWon.length;
+
     if (cardsWon.length === cardArray.length / 2) {
         resultDisplay.textContent = 'Congratulations! You matched all the planets!';
         buttonChange.textContent = 'Play Again';
@@ -132,6 +137,7 @@ function checkCards() {
 //variables for flipCard function
 let cardsFlipped = [];
 let cardsFlippedId = [];
+let cardScore = [];
 /**
  *  flips the cards over
  */
@@ -141,6 +147,7 @@ function flipCard() {
 
     cardsFlipped.push(cardArray[cardId].name);
     cardsFlippedId.push(cardId);
+    cardScore.push(1);
     this.setAttribute('src', cardArray[cardId].img);
     this.setAttribute('alt', cardArray[cardId].name);
 
