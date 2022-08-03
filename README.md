@@ -2,7 +2,7 @@
 
 [View the live project here](https://porsil.github.io/planet-match/index.html)
 
-This is the website for Planet Match. A website for playing a matching planet card game. The website is responsive allowing the game to be played on a range of devices.
+This is the website for Planet Match. A website for playing a matching planet card game. The game is primarily aimed at kids, but can be enjoyed by all ages. The website is responsive allowing the game to be played on a range of devices.
 
 ![Website images](assets/read-me-docs/responsive.png)
 
@@ -34,6 +34,12 @@ This is the website for Planet Match. A website for playing a matching planet ca
     -   This addresses visitor goal 1.
 
 ![game name](assets/read-me-docs/title.png)
+
+-   **Statistics**
+
+    -   At the top of the game area, the statistics of the current game are displayed. This shows the user the number of attemps made, and how many planets have been matched out of the 8 possible matches.
+
+![stats](assets/read-me-docs/stats.png)
 
 -   **Game Area**
 
