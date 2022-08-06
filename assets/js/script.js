@@ -40,6 +40,42 @@ for (let i = cardArray.length -1; i > 0; i--) {
 }
 
 /**
+ *  flips the cards over
+ */
+ function flipCard() {
+
+    let cardId = this.getAttribute('data-id');
+
+    cardsFlipped.push(cardArray[cardId].name);
+    cardsFlippedId.push(cardId);
+    cardScore.push(1);
+    this.setAttribute('src', cardArray[cardId].img);
+    this.setAttribute('alt', cardArray[cardId].name);
+
+    if (cardsFlipped.length === 2) {
+        overlayOn();
+        setTimeout(checkCards, 750);
+        setTimeout(overlayOff, 750);
+    }
+}
+
+/**
+ *  displays the overlay div
+ */
+ function overlayOn() {
+    document.getElementById("overlay")
+    .style.display = "block";
+}
+
+/**
+ *  hides the overlay div
+ */
+function overlayOff() {
+    document.getElementById("overlay")
+    .style.display = "none";
+}
+
+/**
  *  checks for matches and updates statistics
  */
 function checkCards() {
@@ -64,7 +100,7 @@ function checkCards() {
     scoreDisplay.textContent = cardScore.length / 2;
     matchedDisplay.textContent = cardsWon.length;
     
-    checkWon;
+    checkWon();
 }
 
 /**
@@ -75,25 +111,6 @@ function checkWon() {
     if (cardsWon.length === cardArray.length / 2) {
         resultDisplay.textContent = 'Congratulations! You matched all the planets!';
         buttonChange.textContent = 'Play Again';
-    }
-}
-
-/**
- *  flips the cards over
- */
-function flipCard() {
-
-    let cardId = this.getAttribute('data-id');
-
-    cardsFlipped.push(cardArray[cardId].name);
-    cardsFlippedId.push(cardId);
-    cardScore.push(1);
-    this.setAttribute('src', cardArray[cardId].img);
-    this.setAttribute('alt', cardArray[cardId].name);
-
-    if (cardsFlipped.length === 2) {
-        setTimeout(checkCards, 500);
-        
     }
 }
 
