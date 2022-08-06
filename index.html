@@ -8,7 +8,7 @@
     <meta name="description" content="Planet matching card memory game">
     <meta name="keywords" content="Planet match, card match, memory game">
 
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Planet Match</title>
@@ -18,23 +18,59 @@
     <header>
         <h1>Planet Match</h1>
     </header>
+    
+    <!--game statistics-->
+    <section>
+        <div class="stats">Score: <span id="score">0</span></div>
+        <div class="stats">Planets Found: <span id="matched">0</span> / 8</div>
+    </section>
+   
+    <!--game play area-->
+    <section>
+        <div class="grid"></div>
+        <div id="result"></div>
+    </section>
 
-    <!-- game statistics-->
-    <div class="stats">Score: <span id="score">0</span></div>
-    <div class="stats">Planets Found: <span id="matched">0</span> / 8</div>
-    <!-- game play area-->
-    <div class="grid"></div>
-    <div id="result"></div>
-    <!-- refresh button onclick code taken from 
-        https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click-->
+    <!--refresh button-->
+    <section>
     <button id="reset" onclick="location.href=location.href">Reset Board</button>
-
-    <footer>
+    </section>
+    
+    <!--rules section-->
+    <section class="rules">
         <h2>how to play</h2>
         <p>Click on the cards to reveal the planet. Match all the planets to win!</p>
+    </section>
+
+    <footer>
+        <ul class="social-links">
+            <li>Join us on:</li>
+            <li>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener"
+                    aria-label="Find us on YouTube (link opens in a new tab)">
+                    <i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Facebook (link opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Instagram (link opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener"
+                    aria-label="Find us on Twitter (link opens in a new tab)">
+                    <i class="fa-brands fa-twitter"></i></a>
+            </li>
+        </ul>
     </footer>
 
     <script src="assets/js/script.js"></script>
+    <!-- font awesome script - taken from https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/596ce5d4b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
