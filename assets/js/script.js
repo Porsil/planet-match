@@ -1,7 +1,7 @@
 //imports the cards from file cards.js
 import {
     cardArray
-} from './cards.js'
+} from './cards.js';
 
 //variables
 let scoreDisplay = document.getElementById("score");

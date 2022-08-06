@@ -38,7 +38,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
 
 -   **Statistics**
 
-    -   At the top of the game area, the statistics of the current game are displayed. This shows the user the number of attemps made, and how many planets have been matched out of the 8 possible matches.
+    -   At the top of the game area, the statistics of the current game are displayed. This shows the user the number of attempts made, and how many planets have been matched out of the 8 possible matches.
 
 ![stats](assets/read-me-docs/stats.png)
 
@@ -73,7 +73,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
 -   **Footer**
 
     -   The page footer has links to social media to allow people to contact and keep up to date with the company.
-    -   This addresses vsitor goal 6.
+    -   This addresses visitor goal 6.
 
 ![footer](assets/read-me-docs/footer.png)
 
@@ -110,7 +110,7 @@ The website is responsive on all device sizes and to maximise the websites visua
 
 -   ## **Testing**
 
-The site was frequently tested during development on Firefox, Google Chrome and Microsoft Edge browsers. The development tools were used frequently to log text to the console to test the javascript fuctions during game development and to view the site layout on different devices as well as using the 'responsive' setting to see at what sizes the layout became distorted.
+The site was frequently tested during development on Firefox, Google Chrome and Microsoft Edge browsers. The development tools were used frequently to log text to the console to test the JavaScript functions during game development and to view the site layout on different devices as well as using the 'responsive' setting to see at what sizes the layout became distorted.
 
 Once deployed the website was tested on Firefox, Google Chrome and Microsoft Edge browsers on a desktop and on a Kindle Fire and iPhone12, in both portrait and landscape.
 
@@ -120,16 +120,16 @@ The game was also tested by my planet mad 5 year old son, Alex, whom the game wa
 
 -   **Bugs**
 
-    -   The flipCard and checkCards function would intially not work. Moving some of the variables to outside of the fucntion fixed this.
-    -   If more than 2 cards are clicked in the 0.75 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug was fixed by creating an overlay that was called to cover the gameboard during the 0.75 seconds which meant the cards underneath the overlay could not be clicked. 
+    -   The flipCard and checkCards function would initially not work. Moving some of the variables to outside of the function fixed this.
+    -   If more than 2 cards are clicked in the 0.75 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug was fixed by creating an overlay that was called to cover the gameboard during the 0.75 seconds which meant the cards underneath the overlay could not be clicked. The bug was still occasionally present on an iPhone 12, so 10 milliseconds were added to the setTimeout for overlayOff in the flipCard function. This fixed the bug.
 
 -   **Validator Testing**
 
     - HTML
-        -   When passed through the [official W3C HTML validator](https://validator.w3.org/) no errors were found.
+        -   When passed through the [official W3C HTML validator](https://validator.w3.org/) no errors were found. Three warning were given for sections lacking a heading. This was not addessed as headings are not required for the sections.
     
     - CSS
-        -   The [official W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) gave an error as the 2 parameters given for padding had a comma sepataing them. The comma was removed to resolve the error.
+        -   The [official W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) gave an error as the 2 parameters given for padding had a comma separating them. The comma was removed to resolve the error.
     
     - JS
         -   The code was passed through [JSHint](https://jshint.com/), which was configured to ES6, some missing semi-colons were flagged. The semi-colons were added to resolve the warnings.
@@ -141,7 +141,7 @@ The game was also tested by my planet mad 5 year old son, Alex, whom the game wa
 
     -   Lighthouse
         -   Lighthouse reports were generated through the Google Chrome developer tools at several points during the websites development.
-        -   The first report gave a accessability score of 82, due to no alt labels being added to the images. Javascript code was added to include alt labels on all images, which improved the score to 100.
+        -   The first report gave an accessibility score of 82, due to no alt labels being added to the images. JavaScript code was added to include alt labels on all images, which improved the score to 100.
         -   The final report after deployment gave the following scores:
 
         ![Lighthouse Report](assets/read-me-docs/lighthouse.png)
@@ -164,7 +164,7 @@ The project was deployed to GitHub pages using the following steps:
 
     -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/).
     -   The code to add the icons used in the logo and footer were taken from [Font Awesome](https://fontawesome.com/).
-    -   The Javascript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
+    -   The JavaScript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
     -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
     -   The code for shuffling the cards using the Fisher Yates method was taken from this [w3schools page](https://www.w3schools.com/js/js_array_sort.asp).
     -   The code for creating the overlay was taken from this [w3schools page](https://www.w3schools.com/howto/howto_css_overlay.asp).
