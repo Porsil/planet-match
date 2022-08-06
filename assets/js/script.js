@@ -3,15 +3,20 @@ import {
     cardArray
 } from './cards.js'
 
-// waits for the DOM to finish loading before running the game
-document.addEventListener("DOMContentLoaded", function() {
-    createGame();
-});
+//variables
+let scoreDisplay = document.getElementById("score");
+let matchedDisplay = document.getElementById("matched");
+let resultDisplay = document.getElementById("result");
+let buttonChange = document.getElementById("reset");
+let cardsWon = [];
+let cardsFlipped = [];
+let cardsFlippedId = [];
+let cardScore = [];
 
 /**
  *  adds the cards to the grid to create the game board
  */
-function createGame() {
+function createBoard() {
     
     let grid = document.getElementsByClassName('grid')[0];
 
@@ -34,14 +39,8 @@ for (let i = cardArray.length -1; i > 0; i--) {
     cardArray[j] = k;
 }
 
-// variables for checkCards function
-let scoreDisplay = document.getElementById("score");
-let matchedDisplay = document.getElementById("matched");
-let resultDisplay = document.getElementById("result");
-let buttonChange = document.getElementById("reset");
-let cardsWon = [];
 /**
- *  checks for matches and game end
+ *  checks for matches and updates statistics
  */
 function checkCards() {
     
@@ -61,20 +60,24 @@ function checkCards() {
     }
     cardsFlipped = [];
     cardsFlippedId = [];
-    
+
     scoreDisplay.textContent = cardScore.length / 2;
     matchedDisplay.textContent = cardsWon.length;
+    
+    checkWon;
+}
 
+/**
+ *  checks for game being won
+ */
+function checkWon() {
+        
     if (cardsWon.length === cardArray.length / 2) {
         resultDisplay.textContent = 'Congratulations! You matched all the planets!';
         buttonChange.textContent = 'Play Again';
     }
 }
 
-//variables for flipCard function
-let cardsFlipped = [];
-let cardsFlippedId = [];
-let cardScore = [];
 /**
  *  flips the cards over
  */
@@ -90,5 +93,11 @@ function flipCard() {
 
     if (cardsFlipped.length === 2) {
         setTimeout(checkCards, 500);
+        
     }
 }
+
+// waits for the DOM to finish loading before running the game
+document.addEventListener("DOMContentLoaded", function() {
+    createBoard();
+});
