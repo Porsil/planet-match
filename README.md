@@ -157,6 +157,7 @@ The project was deployed to GitHub pages using the following steps:
 -   **Code**
 
     -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/).
+    -   The code to add the icons used in the logo and footer were taken from [Font Awesome](https://fontawesome.com/).
     -   The Javascript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
     -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
     -   The code for shuffling the cards using the Fisher Yates method was taken from this [w3schools page](https://www.w3schools.com/js/js_array_sort.asp).
