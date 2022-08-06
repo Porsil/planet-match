@@ -54,7 +54,7 @@ for (let i = cardArray.length -1; i > 0; i--) {
     if (cardsFlipped.length === 2) {
         overlayOn();
         setTimeout(checkCards, 750);
-        setTimeout(overlayOff, 750);
+        setTimeout(overlayOff, 760);
     }
 }
 
