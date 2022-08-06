@@ -13,6 +13,7 @@ This is the website for Planet Match. A website for playing a matching planet ca
   3. Easily play the game on any screen size.
   4. To be able to restart the game during play if desired.
   5. To be able to play the game again once completed.
+  6. To be able to contact the company.
 
 -   ### **Wireframes**
 
@@ -64,10 +65,17 @@ This is the website for Planet Match. A website for playing a matching planet ca
 
 -   **Game Rules**
 
-    -   The game rules are permanently displayed at the bottom of the site to be easily found at all times during game play.
+    -   The game rules are permanently displayed at the bottom of the game board all times during game play.
     -   This addresses visitor goal 2.
 
 ![game rules](assets/read-me-docs/game-rules.png)
+
+-   **Footer**
+
+    -   The page footer has links to social media to allow people to contact and keep up to date with the company.
+    -   This addresses vsitor goal 6.
+
+![footer](assets/read-me-docs/footer.png)
 
 -   **404 Page**
 
@@ -104,18 +112,16 @@ The website is responsive on all device sizes and to maximise the websites visua
 
 The site was frequently tested during development on Firefox, Google Chrome and Microsoft Edge browsers. The development tools were used frequently to log text to the console to test the javascript fuctions during game development and to view the site layout on different devices as well as using the 'responsive' setting to see at what sizes the layout became distorted.
 
-*****************************************************************************
 Once deployed the website was tested on Firefox, Google Chrome and Microsoft Edge browsers on a desktop and on a Kindle Fire and iPhone12, in both portrait and landscape.
 
 Testing of the website was also performed by family on a Samsung Galaxy Tab A and a Samsung Galaxy J5 to aid in the discovery of bugs and user experience issues.
-*****************************************************************************
 
 The game was also tested by my planet mad 5 year old son, Alex, whom the game was created for.
 
 -   **Bugs**
 
     -   The flipCard and checkCards function would intially not work. Moving some of the variables to outside of the fucntion fixed this.
-    -   If more than 2 cards are clicked in the 0.5 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug has not been fixed.
+    -   If more than 2 cards are clicked in the 0.75 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug was fixed by creating an overlay that was called to cover the gameboard during the 0.75 seconds which meant the cards underneath the overlay could not be clicked. 
 
 -   **Validator Testing**
 
@@ -161,6 +167,7 @@ The project was deployed to GitHub pages using the following steps:
     -   The Javascript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
     -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
     -   The code for shuffling the cards using the Fisher Yates method was taken from this [w3schools page](https://www.w3schools.com/js/js_array_sort.asp).
+    -   The code for creating the overlay was taken from this [w3schools page](https://www.w3schools.com/howto/howto_css_overlay.asp).
 
 -   **Media**
 
@@ -175,3 +182,7 @@ The project was deployed to GitHub pages using the following steps:
         - [Neptune](https://pixabay.com/photos/neptune-planet-solar-system-67537/)
         - [Nebula for card back](https://pixabay.com/photos/ngc-2264-dark-cloud-cone-nebula-11176/)
         - [Rocket for favicon](https://pixabay.com/vectors/rocket-icon-symbol-gui-internet-1976107/)
+
+-   **Acknowledgements**
+
+    -   My Mentor Narender Singh for their knowledge and feedback.

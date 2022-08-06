@@ -31,7 +31,6 @@ function createBoard() {
 }
 
 // shuffles the cards using the Fisher Yates method
-// taken from https://www.w3schools.com/js/js_array_sort.asp
 for (let i = cardArray.length -1; i > 0; i--) {
     let j = Math.floor(Math.random() * i);
     let k = cardArray[i];
