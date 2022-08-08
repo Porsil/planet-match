@@ -53,8 +53,8 @@ for (let i = cardArray.length -1; i > 0; i--) {
 
     if (cardsFlipped.length === 2) {
         overlayOn();
-        setTimeout(checkCards, 750);
-        setTimeout(overlayOff, 760);
+        setTimeout(checkCards, 1000);
+        setTimeout(overlayOff, 1010);
     }
 }
 
