@@ -103,6 +103,7 @@ The website is responsive on all device sizes and to maximise the websites visua
 -   **Frameworks, Libraries & Programs Used**
 
     -   [Google Fonts](https://fonts.google.com/) were used to import the 'Orbitron' font into the style.css file. This font is used throughout all pages of the website.
+    -   [Font Awesome](https://fontawesome.com/) was used for the social media icons in the footer.
     -   [Gitpod](https://gitpod.io/) was used for version control by utilizing the Gitpod terminal to commit to Git and push to [Github](https://github.com/) which then stored the project code.
     -   [Balsamiq](https://balsamiq.com/) was used to create the wireframe for the website.
     -   Microsoft Paint was used to create the planet images.
@@ -121,7 +122,7 @@ The game was also tested by my planet mad 5 year old son, Alex, whom the game wa
 -   **Bugs**
 
     -   The flipCard and checkCards function would initially not work. Moving some of the variables to outside of the function fixed this.
-    -   If more than 2 cards are clicked in the 0.75 seconds before the checkCards function is invokes, then the game breaks as one card is left face up. This bug was fixed by creating an overlay that was called to cover the gameboard during the 0.75 seconds which meant the cards underneath the overlay could not be clicked. The bug was still occasionally present on an iPhone 12, so 10 milliseconds were added to the setTimeout for overlayOff in the flipCard function. This fixed the bug.
+    -   If more than 2 cards are clicked in the time before the checkCards function is invoked, then the game breaks as only two cards return to being face down. This bug was fixed by creating an overlay that was called to cover the gameboard during the display time meaning the cards underneath the overlay could not be clicked. The bug was still occasionally present on an iPhone 12, so 10 milliseconds were added to the setTimeout for overlayOff in the flipCard function. This fixed the bug.
 
 -   **Validator Testing**
 
@@ -163,7 +164,7 @@ The project was deployed to GitHub pages using the following steps:
 -   **Code**
 
     -   The code to import the fonts was taken from [Google Fonts](https://fonts.google.com/).
-    -   The code to add the icons used in the logo and footer were taken from [Font Awesome](https://fontawesome.com/).
+    -   The code to add the icons used in the footer were taken from [Font Awesome](https://fontawesome.com/).
     -   The JavaScript code was based on the principles given in [Ania Kubów's Memory Game video](https://www.youtube.com/watch?v=tjyDOHzKN0w).
     -   The onclick code for the refresh button was taken from this [stackoverflow post](https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click).
     -   The code for shuffling the cards using the Fisher Yates method was taken from this [w3schools page](https://www.w3schools.com/js/js_array_sort.asp).
